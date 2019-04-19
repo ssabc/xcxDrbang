@@ -1,0 +1,24 @@
+<view class="page">
+  <form bindsubmit="sendComment">
+    <view class="btn-wrap">
+        <button type="primary" form-type="submit">发送 </button>
+    </view>
+    <view class="textarea-wrap">
+        <textarea class="textarea" bindblur="bindTextAreaBlur" name="textarea" placeholder="来都来了,不如顺便说点什么吧..." />
+    </view>
+   </form>
+  <!--   <view class="addImgs-wrap">
+      <view class="imgList-wrap">
+        <block wx:for-items="{{imgList}}" wx:for-item="item">
+           <view class="img-item-wrap"> 
+                <image id="{{item}}" bindtap="openImg" class="img-item" style="width:50px;height:50px;"src="{{item}}" />
+                <image id="{{index}}" class="del-img" bindtap="delImgFn" style="width:15px;height:15px;" src="../../images/del3.png"></image>
+           </view>
+        </block>
+        <view  wx:if="{{imgList.length<10}}" class="img-item-add" bindtap="addImgFn">
+            <image style="width:20px;height:20px;"src="../../images/add.png" />
+        </view>
+      </view>
+      <text class="text-add-tip">还可以添加 {{9-imgList.length}} 张图片</text>
+   </view>-->
+</view>

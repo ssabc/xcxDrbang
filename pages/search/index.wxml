@@ -1,0 +1,36 @@
+<view class="page">
+    <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="请输入多肉植物名称或首字母" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping"  bindblur="bindblur"/>
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                    <icon type="clear" size="14"></icon>
+                </view>
+            </view>
+            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">搜索</view>
+            </label>
+        </view>
+        <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <scroll-view scroll-y="true" style="height:{{windowHeight-70}}px;">
+            <block wx:for="{{searchResult}}" wx:key="item">
+            <navigator url="/pages/common/tujian/index?kx={{ item.kx }}&sx={{ item.sx }}&pm={{ item.rouSzm }}&pmName={{item.rouName}}&imgPath=http://oopa8ayey.bkt.clouddn.com/searchBg.jpg&isFromSearch=true">
+                <view bindtap="" class="weui-cell bordNavBottom">
+                    <view id="{{item.rouName}}" class="weui-cell__bd naviHover" bindtap="bindChangeCity">
+                    {{item.rouName}} , {{item.sxName}} , {{item.kxName}}</view>
+                </view>
+                </navigator>
+            </block>
+        </scroll-view>
+    </view>
+    <view wx:if="{{inputVal.length == 0}}">
+        <view class="weui-cells__title">热门搜索</view>
+        <view class="searchItem-wrap">
+                <view wx:for="{{rouArrys}}" wx:key="item" class="searchItem"><navigator url="/pages/common/tujian/index?kx={{ item.kx }}&sx={{ item.sx }}&pm={{ item.rouSzm }}&pmName={{item.rouName}}&imgPath=http://oopa8ayey.bkt.clouddn.com/searchBg.jpg&isFromSearch=true"> {{item.rouName}} </navigator></view>
+        </view>
+    </view>
+</view>

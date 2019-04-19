@@ -1,0 +1,65 @@
+/* commponents/comments/index.wxss */
+.communityPage-list{
+    /*height: 200px;*/
+    padding: 0 10px;
+}
+.zan-tip{
+  padding: 10px 0 0 0;
+  border-bottom:  1px solid #62b900;
+  color: #62b900;
+}
+.weui-media-box__hd_in-appmsg-zan {
+  width:30px;
+  height:30px;
+  display:inline-block;
+}
+.communityPage-li{
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+.communityPage-li-noline{
+  padding:8rpx 0;
+}
+.communityPage-li-content{
+    display: flex;
+}
+.communityPage-li-info{
+  float: right;
+  color: #a3a3a3;
+  margin-left: 10px;
+}
+.communityPage-li-info > icon{
+  font-size: 16px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.communityPage-li-info > icon:before{
+  display: block;
+}
+.communityPage-li-info > text{
+  vertical-align: middle;
+}
+.communityPage-li-foot{
+  height: 20px;
+}
+.communityPage-li-none{
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #949494;
+}
+.weui-panel{
+    background-color: #3C3C3C;
+}
+.comment-img-wrap{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.comment-img {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  display: inline-block;
+}

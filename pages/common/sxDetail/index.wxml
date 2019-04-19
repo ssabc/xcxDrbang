@@ -1,0 +1,27 @@
+<!--pages/common/sxDetail/index.wxml-->
+<view class="page">
+    <scroll-view  scroll-y="true" style="width:{{windowWeight}}px;height:{{windowHeight}}px;overflow-x:hidden;" bindscrolltoupper="upper">
+            <view class="itemWrap">
+                <view wx:for="{{ sxInfo }}" wx:key="item" class="item">
+                    <navigator url="/pages/common/tujian/index?kx={{ kx }}&kxName={{kxName}}&sx={{ sx }}&sxName={{sxName}}&pm={{ item.key }}&pmName={{item.name}}&imgPath={{ item.bgImg }}">
+                        <image src="{{ item.bgImg }}" class="itemImg"></image>
+                    </navigator>
+                    <view class="msgWrapper">
+                            {{ item.name }}
+                            <view class='tjText' style=" display: {{ item.dianzanNum >0 ? 'inline-flex' :'none' }}">
+                                <icon class="iconfont iconzan"></icon>
+                                <text> {{ item.dianzanNum }} </text>
+                            </view>
+                            <view class='tjText'  style=" display: {{ item.comentNum >0 ? 'inline-flex' :'none' }}">
+                                <icon class="iconfont iconcoments"></icon>
+                                <text>{{ item.comentNum }}</text>
+                            </view>
+                            <view class='tjText' style=" display: {{ item.preNums >0 ? 'inline-flex' :'none' }}">
+                              <icon class="iconfont iconeye"></icon>
+                              <text> {{ item.preNums }} </text>  
+                            </view>
+                    </view>
+                </view>
+            </view>
+    </scroll-view>
+</view>

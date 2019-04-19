@@ -1,0 +1,42 @@
+/* pages/common/sxDetail/index.wxss */
+.page{
+    background-color: #3c3c3c;
+}
+.item{
+    width: 50%;
+    color: #555;
+    font-size: 14px;
+    display: inline-flex;
+    flex-flow: column;
+    text-align: center;
+}
+.itemImg{
+    display: inline-block;
+    width: 90%;
+    height: 300rpx;
+    padding: 10px 5% 0 5%;
+}
+.msgImg{
+    width: 24px;
+    height: 20px;
+    margin-left: 8rpx;
+}
+.msgWrapper{
+    color: #eeeeee;
+    display: flex;
+    line-height: 20px;
+    justify-content: center;
+}
+.msgImg-dianzan{
+    width: 22px;
+    height: 19px;
+    margin: 0 8rpx;
+    background-size:100% 100%;
+}
+.tjText{
+    color:#62b900;
+    font-size: 10px;
+}
+.iconfont {
+  margin-left: 10rpx;
+}

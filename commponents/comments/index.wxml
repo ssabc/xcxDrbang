@@ -1,0 +1,32 @@
+<!--commponents/comments/index.wxml-->
+<template name="commentItem">
+    <view class="weui-panel weui-panel_access communityPage-list">  
+        <view class="communityPage-li"  wx:for="{{coment}}" wx:key="item" wx:for-index="sInd" data-id="{{item.id}}" catchtap="turnToDetail">
+            <view class="communityPage-li-content">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="{{ item.userlogo }}" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title font16">{{ item.username }} </view>
+                    <view class="weui-media-box__desc font14">{{ item.content }}</view>
+                    <view class="comment-img-wrap">
+                        <image wx:for-items="{{item.imgs}}" wx:for-item="item" bindtap="openImg" id="{{item}}" class="comment-img" src="{{ item }}" />
+                    </view>
+                    <view class="weui-media-box__desc font12">{{ item.time }}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style="display:{{zans?'block':'none'}};padding-bottom:80rpx;" class="weui-panel weui-panel_access communityPage-list">  
+        <view class="zan-tip">
+            <text>赞</text>
+        </view>
+        <view class="communityPage-li-noline">
+            <view class="communityPage-li-content">
+                <view  wx:for="{{zans}}" wx:key="item" class="weui-media-box__hd weui-media-box__hd_in-appmsg weui-media-box__hd_in-appmsg-zan">
+                    <image class="weui-media-box__thumb" src="{{ item.userlogo }}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>

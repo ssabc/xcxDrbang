@@ -1,0 +1,33 @@
+<!--pages/common/tujian/index.wxml-->
+<import src="../../../commponents/comments/index.wxml"/>
+<import src="../../../libs/wxParse/wxParse.wxml"/> 
+<view class="page">
+    <view class="page__bd">
+    <scroll-view class="scroll-wrapper" scroll-y="true" style="height:{{windowHeight-52}}px; background-image: url('{{ imgPath }}')">
+        <view class="upArrow" style="left: {{ (windowWidth-30 )/ 2}}px; top:{{ windowHeight-182 }}px; display: {{ marginTop == 0 ? 'none' :'block'}} "></view>
+        <view class="weui-article" style=" margin-top: {{ marginTop }}px">
+            <view class="weui-article__h1">{{ pmName }}</view>
+            <view class='headPreNum'>浏览量：{{preNum || 0}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__title">{{ kxName }} {{  sxName }}</view>
+                <view class="weui-article__section lineTop">
+                    <view class="weui-article__p">
+                        <template is="wxParse" data="{{wxParseData:text.nodes}}"/>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <template is="commentItem" data="{{...infos}}"/>
+        </scroll-view>
+    </view>
+</view>
+
+
+    <view class="foot commentWrap">
+        <view class="weui-cell">
+            <icon class="iconfont iconzan" style="color: {{dianzan ? '#A4D573' : '#bfbfbf'}}"></icon>
+            <view class="weui-cell__bd">
+                <view bindtap="bindKeyInput" class="input" style="width: 650rpx;font-size:12px;line-height: 30px;">回个话鼓励一下</view>
+            </view>
+        </view>
+    </view>

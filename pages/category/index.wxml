@@ -1,0 +1,23 @@
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+        <scroll-view class="kind-list" scroll-y style="height: {{wHeight}}px">
+            <block wx:for-items="{{cats}}">
+                <view class="kind-list__item">
+                    <view id="{{index}}" class="weui-flex kind-list__item-hd {{now==index ? 'kind-list__item-hd_show' : ''}}" bindtap="showShutypes">
+                        <view class="weui-flex__item">{{item.baseInfo.name}}</view>
+                    </view>
+                    <view class="kind-list__item-bd {{now==index ? 'kind-list__item-bd_show' : ''}}">
+                        <view class="weui-cells {{now==index ? 'weui-cells_show' : ''}}">
+                            <block wx:for-items="{{item.list}}" wx:for-item="t">
+                                <navigator url="/pages/common/sxDetail/index?kx={{item.key}}&sx={{t.baseInfo.sx}}&sxName={{t.baseInfo.name}}&kxName={{item.baseInfo.name}}" class="weui-cell weui-cell_access">
+                                    <view class="weui-cell__bd">{{t.baseInfo.name}}</view>
+                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                                </navigator>
+                            </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+</view>

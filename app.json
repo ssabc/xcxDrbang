@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/category/index",
+    "pages/comment/index",
+    "pages/aboutMe/index",
+    "pages/aboutUs/aboutUs",
+    "pages/calendar/index",
+    "pages/common/msgDetail/index",
+    "pages/common/sxDetail/index",
+    "pages/common/tujian/index",
+    "pages/search/index"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#535353",
+    "navigationBarTitleText": "多肉邦",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#bfbfbf",
+    "selectedColor":"#A4D573",
+    "list": [
+    {
+      "pagePath": "pages/category/index",
+      "text": "多肉科属",
+      "iconPath": "images/cate.png",
+      "selectedIconPath": "images/cate_sel.png"
+    },
+    {
+      "pagePath": "pages/search/index",
+      "text": "搜索",
+      "iconPath": "images/search.png",
+      "selectedIconPath": "images/search_sel.png"
+    },
+    {
+      "pagePath": "pages/aboutMe/index",
+      "text": "我",
+      "iconPath": "images/me.png",
+      "selectedIconPath": "images/me_sel.png"
+    }]
+  },
+   "networkTimeout": {
+    "request": 30000
+  }
+}

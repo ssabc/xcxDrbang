@@ -1,0 +1,30 @@
+<!--pages/common/msgDetail/index.wxml-->
+<import src="../../../commponents/comments/index.wxml"/>
+<import src="../../../libs/wxParse/wxParse.wxml"/> 
+<view class="page">
+    <view class="page__bd content">
+    <scroll-view scroll-y="true" style="height:{{windowHeight-52}}px;background-image:url(http://oopa8ayey.bkt.clouddn.com/articleBg.jpg)">
+        <view class="weui-article">
+            <view class="weui-article__h1 msgHead">{{ article.title }}</view>
+            <view class='headPreNum'>浏览量：{{preNum || 0}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                        <template is="wxParse" data="{{wxParseData:text.nodes}}"/>
+                </view>
+            </view>
+        </view>
+        <template is="commentItem" data="{{...article}}"/>
+        </scroll-view>
+    </view>
+</view>
+    <view class="foot commentWrap">
+        <view class="weui-cell">
+            <view class="msgImg-dianzan" style="background-image:url('{{dianzan ? 'http://oopa8ayey.bkt.clouddn.com/dianzan_sel.png' : 'http://oopa8ayey.bkt.clouddn.com/dianzan.png'}}')" bindtap="dianzan"></view>
+            <view class="weui-cell__bd">
+                <input type="text"  bindinput="bindKeyInput" class="input" value="{{commentText}}" placeholder="回个话鼓励一下"/>
+            </view>
+            <view class="weui-cell__ft">
+                <view class="btn" bindtap="sendComment">发送</view>
+            </view>
+        </view>
+    </view>

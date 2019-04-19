@@ -1,0 +1,93 @@
+.headWrap{
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+.noInfoWrap image{
+  margin-bottom: 10px;
+}
+.logo{
+    width: 140rpx;
+    height: 140rpx;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.icon{
+    width: 28rpx;
+    height: 30rpx;
+    margin-right:12rpx;
+}
+.icon2{
+    width: 30rpx;
+    height: 30rpx;
+    margin-right:12rpx;
+}
+.section{
+    position: relative;
+    background-color: #ffffff;
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    /*border: 1rpx solid #e5e5e5;*/
+    margin-top: 20rpx;
+    border-radius: 4rpx;
+    padding: 0 46rpx 20rpx 46rpx;
+}
+.headTitle{
+    height:34rpx;
+    line-height: 34rpx;
+    padding: 22rpx 0;
+    border-bottom: 2rpx solid #e5e5e5;
+    font-size: 30rpx;
+    color: #333333;
+    display: flex;
+}
+.content{
+   font-size: 26rpx;
+    color: #666666;
+    padding:20rpx 0;
+    line-height:34rpx;
+}
+.imageText{
+    line-height: 60rpx;
+}
+.item-cell{
+  display: flex;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  color: #666666;
+}
+.textTip{
+    width: 108rpx;
+    text-align: justify;
+    text-align-last: justify;
+}
+.textTipView{
+    width: 108rpx;
+    text-align: justify;
+    text-align-last: justify;
+    display: flex;
+    justify-content: space-between;
+}
+.itemMid{
+    margin-left: 8rpx;
+  flex: 1;
+}
+.companyInfo{
+    width: 32rpx;
+    height: 32rpx;
+    display: inline-block;
+    margin-right: 8rpx;
+}
+.contact{
+    width: 30rpx;
+    height: 30rpx;
+    display: inline-block;
+    margin-right: 8rpx;
+}

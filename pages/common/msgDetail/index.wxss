@@ -1,0 +1,86 @@
+/* pages/common/msgDetail/index.wxss */
+@import '../../../commponents/comments/index.wxss';
+@import "../../../libs/wxParse/wxParse.wxss";
+page{
+    background-color: #3C3C3C;
+    color: #EEEEEE;
+    margin-bottom: 80rpx;
+}
+.weui-article{
+    opacity: 0.95;
+    background-color: #3C3C3C;
+}
+.weui-cell {
+    padding: 10px 0;
+}
+.weui-panel{
+    margin-top: 0;
+}
+image{
+    margin: 4px 0;
+}
+.msgHead{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.headPreNum{
+  color: #62b900;
+  font-size: 12px;
+  padding-bottom:  20rpx;
+  
+}
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+.msgImg-dianzan{
+    width: 26px;
+    height: 26px;
+    margin: 0 8rpx;
+    background-size:100% 100%;
+}
+.commentWrap{
+    height: 52px;
+    width: 100%;
+    padding: 10rpx 5rpx;
+    background-color: #3C3C3C;
+}
+.commentWrap input, .commentWrap .btn{
+    font-size: 12px;
+}
+.input{
+    border-radius: 8rpx;
+    border: 1px solid #ddd;
+    padding-left: 8rpx;
+}
+.btn{
+    height: 1.4rem;
+    line-height: 1.4rem;
+    padding: 0 10rpx;
+    border-radius: 8rpx;
+    border: 1px solid #ddd;
+    margin: 0 20rpx 0 40rpx;
+}
+.page__bd{
+    padding-bottom: 80rpx;
+}
+.weui-media-box__thumb{
+    border-radius: 50%;
+}
+
+image{
+    margin: 0;
+}
+input{
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+

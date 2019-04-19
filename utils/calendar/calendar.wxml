@@ -1,0 +1,22 @@
+<!--calendar class template-->
+<template name="fullCalendar">
+    <view class="fullCalendar-body bgf">
+        <view class="calendar-week calendar-week-header">
+            <block wx:for="{{calendar.days}}" wx:for-item="day">
+                <view class="calendar-day {{index == 5 ||index == 6 ? 'greyColor' : ''}}">{{day}}</view>
+            </block>
+        </view>
+        <view class="date_down_wrap">
+        <view wx:for="{{calendar.weeks}}" wx:for-item="week">
+            <view class="calendar-week">
+                <block wx:for="{{week}}" wx:for-item="day" wx:for-index="idx">
+                    <view bindtap="daytap" data-idx="{{index}},{{idx}}" class="calendar-day mute{{day[0]}} {{realYear == year && realMonth == month && realDay === day[0] ? 'bgPress' :''}}   {{ day[2].holiStatus=='02'?'hoildyBg':''}}">
+                        <view class="date-day {{( (idx == 5 || idx ==6 )?'greyColor':'heiColor' )}}">{{day[0]==0 ? '' : day[0]}}</view>
+                        <!--<view class="">{{day[2].holiStatus=="02"?day[2].holiName:''}}</view>-->
+                    </view>
+                </block>
+            </view>
+        </view>
+        </view>
+    </view>
+</template>

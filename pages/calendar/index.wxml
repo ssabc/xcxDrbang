@@ -1,0 +1,18 @@
+<import src="../../utils/calendar/calendar.wxml"/>
+ <view class="page">
+  <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content marginTop30">
+                        <view class="bgz">{{sx12arrys[sxIndex-1]}}</view>
+                        <view style="width:50%;" class="button-sp-area">
+                            <button class="weui-btn mini-btn switch_arrow" type="primary" plain ="true" bindtap="premonth">{{"<"}}</button> 
+                            <view class="dateClass">{{cal1.year}}-{{cal1.month}}</view>
+                            <button class="weui-btn mini-btn switch_arrow" type="primary" plain ="true" bindtap="nextmonth">{{">"}}</button>
+                        </view>
+                         <template is="fullCalendar" data="{{...cal1}}"></template>
+                </view>
+            </view>
+        </view>  
+        </view>    
+</view>

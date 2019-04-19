@@ -1,0 +1,86 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 108rpx;
+  height: 108rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #62b900;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.page{
+    height: 100%;
+    padding-bottom: 0;
+}
+.iconImg{
+    width: 13px;
+    height: 22px;
+    padding: 0 15px;
+}
+.iconImg2{
+     /*padding: 0 15px;*/
+     height: 30px;
+     width: 30px;
+    background-color: #62b900;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+contact-button{
+    z-index: 0;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.iconImg3{
+    width: 18px;
+    height: 18px;
+    padding: 0 15px;
+}
+.iconImg4{
+    width: 15px;
+    height: 19px;
+     padding: 0 15px;
+}
+.ftFlex{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.bdText{
+    font-size: 17px;
+    color:#6A7FA5;
+}
+.weui-cell{
+    padding: 0.5px 15px;
+}
+.weui-btn-area{
+    margin-top: 29px;
+}
+.about_ft{
+    color: #999999;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 174rpx;
+    letter-spacing:1rpx;
+}
+.naviAboutus{
+    width: 100%;
+    height: auto;
+    border-top: 1rpx solid #e5e5e5;
+}

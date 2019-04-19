@@ -1,0 +1,136 @@
+/* pages/common/tujian/index.wxss */
+@import '../../../commponents/comments/index.wxss';
+@import "../../../libs/wxParse/wxParse.wxss";
+page{
+    background-color: #3C3C3C;
+    color: #EEEEEE;
+    margin-bottom: 80rpx;
+}
+.page__bd{
+    padding-bottom: 80rpx;
+}
+.scroll-wrapper{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+image{
+    margin: 4px 0;
+}
+.lineTop{
+    border-top: 4rpx solid #6D6D6D;
+}
+.sun,.water{
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+}
+
+.imgTextWrap{
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    padding: 4px 0;
+}
+.imgTextWrap text{
+    padding-right: 16rpx;
+}
+image{
+    margin: 0;
+}
+.weui-article__h1 {
+    font-size:22px;
+    font-weight:400;
+    margin-bottom:.5em;
+}
+.weui-article__p{
+   padding-top: .5em;
+}
+
+.bge3{
+    background-color: #3C3C3C;
+}
+.weui-article {
+    position: relative;
+    opacity:0.95;
+    background-color:#3c3c3c;
+    border-radius:8px 8px 0 0
+}
+.weui-cell {
+    padding: 10px 0;
+}
+.msgImg-dianzan{
+    width: 26px;
+    height: 26px;
+    margin: 0 8rpx;
+    background-size:100% 100%;
+}
+.upArrow{
+  position: absolute;
+  display: block;
+  background-image: url("http://oopa8ayey.bkt.clouddn.com/upPull.png");
+  width: 30px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 999;
+}
+.weui-panel {
+    margin-top: 0;
+}
+.weui-media-box__thumb{
+    border-radius: 50%;
+}
+.shuoming{
+    font-size: 12px;
+    color: #A89E98;
+}
+.foot{
+    position: fixed;
+    bottom: 0;
+}
+.commentWrap{
+    height: 52px;
+    width: 100%;
+    padding: 10rpx 5rpx;
+    background-color: #3c3c3c;
+}
+.commentWrap input, .commentWrap .btn{
+    font-size: 12px;
+}
+.commentText{
+    /*height: 200px;*/
+    padding: 0 10px;
+    border-top: 1px solid #eee;
+}
+.com-item{
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.input{
+    border-radius: 8rpx;
+    border: 1px solid #ddd;
+    padding-left: 8rpx;
+}
+.btn{
+    height: 1.4rem;
+    line-height: 1.4rem;
+    padding: 0 10rpx;
+    border-radius: 8rpx;
+    border: 1px solid #ddd;
+    margin: 0 20rpx 0 40rpx;
+}
+
+input{
+    height: 30px;
+    line-height: 30px;
+}
+.headPreNum{
+  color: #62b900;
+  font-size: 12px;
+  padding-bottom:  20rpx;
+  
+}
+.iconzan {
+  padding: 0 10rpx;
+}

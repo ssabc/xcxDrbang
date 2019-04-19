@@ -1,0 +1,125 @@
+.page{
+    height: 100%;
+    background-color: #F6E1E0;
+    background-image: url("http://oopa8ayey.bkt.clouddn.com/articleBg.jpg");
+}
+
+button[type="primary"][plain]{
+    color: #555;
+    border:1px solid #555;
+}
+.switch_arrow{
+    padding: 0 20rpx;
+    line-height: 40rpx;
+    font-weight: bold;
+}
+.weui-navbar{
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 30rpx;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini-btn{
+    margin-top: 0;
+}
+
+.marginTop30{
+    margin-top:10rpx;
+}
+
+.fullCalendar-body{
+    margin: 30rpx;
+}
+.calendar-week.calendar-week-header{
+    font-size:11pt;
+    border-bottom: 1px solid #eee;
+}
+.calendar-week.calendar-week-header .calendar-day{
+    width:14.2%;
+    padding:20rpx 0 30rpx 0;
+    text-align: center;
+}
+.calendar-week{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding-top: 5rpx;
+}
+.calendar-day{
+    /* justify-content: space-between; */
+    display: flex;
+    flex-flow: column;
+    width:14.2%;
+    text-align: center;
+    margin-right:1px;
+    margin-top:1px;
+    font-size: 14px;
+    line-height: 36rpx;
+}
+.date_down_wrap  .calendar-day{
+    height: 84rpx;
+    padding: 5rpx  0 10rpx;
+}
+.calendar-day:hover{
+    box-shadow: 0 0 8rpx #F7C2A2;
+}
+.dateClass{
+    color: #555;
+}
+/*.bgPress:hover{
+    background-color:#179b16;
+}*/
+.date-day{
+    padding: 5rpx 0;
+}
+.date_down_wrap{
+    padding:0 10rpx 50rpx 10rpx;
+}
+
+.greyColor{
+    color: #C3B5AE;
+}
+.heiColor{
+    color: #81513A;
+}
+
+.bgPress{
+    background-color: #FAD297;
+    opacity: 0.6;
+    color: #fff;
+}
+.hoildyBg{
+    background-color: #555;
+    color: #fff;
+}
+.hoildyBg .date-day{
+    color: #fff;
+}
+.bgPress .date-day{
+    color: #fff;
+}
+
+button.button-hover[type="primary"][plain]{
+    color: #333;
+    border: 1rpx solid #333;
+}
+.bgf{
+    position: relative;
+    background-color: #eee;
+    opacity: 0.9;
+}
+.bgz{
+    width: 200rpx;
+    height: 100rpx;
+    position: absolute;
+    color: #555;
+    text-align: center;
+    line-height: 100rpx;
+}

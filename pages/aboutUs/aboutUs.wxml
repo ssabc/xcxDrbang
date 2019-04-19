@@ -1,0 +1,40 @@
+<view class="page">
+    <view class="page__bd">
+        <view class="headWrap">
+            <image class="logo" src="{{ info.logo }}"></image>
+            <text>多肉邦</text>
+        </view>
+
+    <view class="section" style="margin-top:15px;">
+        <view class="headTitle">
+        <text>产品介绍</text>
+        </view>
+        <view class="content">
+        {{ info.proDesc }}
+        </view>
+    </view>
+        <view class="section">
+        <view class="headTitle">
+            <image class="contact" src="../../images/contact.png"></image>
+            <text>联系方式</text>
+         </view>
+        <view class="content" >
+            <view class="item-cell" id="{{ info.address }}" bindtap="openPosition">
+                <text class="textTip">联系地址</text>:
+                <text class="itemMid">{{ info.address }}</text>
+            </view>
+            <view class="item-cell" bindtap="callMe" id="{{ info.phone }}">
+                <text class="textTip">联系电话</text>:
+                <text class="itemMid">{{ info.phone }}</text>
+            </view>
+            <view class="item-cell">
+                <view class="textTipView">
+                    <text>邮</text>
+                    <text>箱</text>
+                </view>:
+                <text class="itemMid">{{ info.email }}</text>
+            </view>
+        </view>
+    </view>
+    </view>
+</view>

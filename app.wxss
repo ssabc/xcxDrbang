@@ -1,0 +1,122 @@
+/*导入微信官方样式*/
+@import 'style/weui.wxss';
+@import 'style/iconfont.wxss';
+/**app.wxss**/
+page{
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #efeff4;
+    font-size: 16px;
+    color: #555;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.weui-cell::before {
+    border-color: #E5E5E5;
+}
+.weui-cell::after {
+    border-color: #E5E5E5;
+}
+.page{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+.page__bd {
+    padding-bottom: 80rpx;
+}
+
+.marginTop20{
+    margin-top: 20rpx;
+}
+.marginTop40{
+    margin-top: 40rpx;
+}
+.marginTop50{
+    margin-top: 50rpx;
+}
+.marginTop80{
+    margin-top: 80rpx;
+}
+
+.weui-cell{
+    font-size: 17px;
+}
+.weui-panel__hd::after {
+    right: 15px;
+}
+.weui-cells:after{
+  border-bottom: none;
+}
+.block{
+    display: block;
+}
+
+.weui-cells:before {
+  border-top: none;
+}
+.weui-panel::after{
+    border-bottom: none;
+}
+
+.weui-panel::before{
+    border-top: none;
+}
+
+.font12{
+    font-size: 12px;
+}
+
+.font15{
+    font-size: 15px;
+}
+.font17{
+    font-size: 17px;
+}
+.font16{
+    font-size: 16px;
+}
+.font14{
+    font-size: 14px;
+}
+.color666{
+    color: #666666;
+}
+.color333{
+    color: #333333;
+}
+.color000{
+    color: #000000;
+}
+
+
+.weui-cells::before{
+   border-top: 1rpx solid #e5e5e5;
+}
+.weui-cells::after{
+   border-bottom: 1rpx solid #e5e5e5 ;
+}
+.placeholder{
+    color: #999999;
+}
+
+button[disabled][type="primary"] {
+    background-color:#62b900;
+    opacity: 0.4;
+}
+button[type="primary"]{
+    background-color:#62b900;
+}
+.button-hover[type="primary"]{
+    background-color:#F0A8AC;
+}
+.weui-navbar__slider {
+    background-color:#62b900;
+}
+.weui-navbar__item.weui-bar__item_on{
+    color: #62b900;
+}
+button[loading][type="primary"] {
+    background-color:#62b900;
+}
