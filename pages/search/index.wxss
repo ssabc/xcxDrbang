@@ -26,8 +26,8 @@
   box-shadow:1px 1px 5px 0 #555;
 }
 .page {
-  background-size: 60% 220px;
+  background-size: 100% 220px;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-image: url(http://oopa8ayey.bkt.clouddn.com/urlLogo.png)
+  background-image: url(https://mmbiz.qpic.cn/mmbiz_jpg/jDMyW4Wvw2eJqIJ5mFIDmmK4QpFDmMwjaODnnSkuibgSGoXVFj3rXlJw6Qnr3aX7k5M4tedmyok3NYaaKvNxVJA/0?wx_fmt=jpeg)
 }

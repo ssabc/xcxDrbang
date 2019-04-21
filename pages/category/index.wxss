@@ -1,5 +1,5 @@
 view.page{
-    background-image: url(http://oopa8ayey.bkt.clouddn.com/jql.jpeg)
+    background-image: url(https://mmbiz.qpic.cn/mmbiz_jpg/jDMyW4Wvw2eJqIJ5mFIDmmK4QpFDmMwjaODnnSkuibgSGoXVFj3rXlJw6Qnr3aX7k5M4tedmyok3NYaaKvNxVJA/0?wx_fmt=jpeg)
 }
 .page__bd {
   opacity: 0.92;
